@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indicadores Municipais</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+<!-- HEADER -->
+  <header class="bg-white/90 backdrop-blur-md border-b border-gray-200 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex items-center justify-between h-16">
+        
+        <!-- Logo -->
+        <div class="flex items-center space-x-3">
+          <div class="w-10 h-10 bg-gradient-to-r from-blue-600 to-blue-400 rounded-lg flex items-center justify-center">
+            <i data-lucide="shield" class="w-6 h-6 text-white"></i>
+          </div>
+          <div>
+            <h1 class="text-xl font-bold text-gray-800">Prefeitura</h1>
+            <p class="text-sm text-gray-500">Transparente</p>
+          </div>
+        </div>
+
+        <!-- Navegação Desktop -->
+        <nav class="hidden md:flex items-center space-x-8">
+          <a href="#transparency" class="flex items-center space-x-2 text-gray-700 hover:text-blue-600 transition">
+            <i data-lucide="shield" class="w-4 h-4"></i><span class="font-medium">Transparência</span>
+          </a>
+          <a href="#reports" class="flex items-center space-x-2 text-gray-700 hover:text-blue-600 transition">
+            <i data-lucide="file-text" class="w-4 h-4"></i><span class="font-medium">Relatórios</span>
+          </a>
+          <a href="#indicators" class="flex items-center space-x-2 text-gray-700 hover:text-blue-600 transition">
+            <i data-lucide="bar-chart-3" class="w-4 h-4"></i><span class="font-medium">Indicadores</span>
+          </a>
+          <a href="#contact" class="flex items-center space-x-2 text-gray-700 hover:text-blue-600 transition">
+            <i data-lucide="users" class="w-4 h-4"></i><span class="font-medium">Contato</span>
+          </a>
+        </nav>
+
+        <!-- Botão CTA -->
+        <div class="hidden md:block">
+          <a href="#portal" class="px-4 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition">
+            Portal do Cidadão
+          </a>
+        </div>
+
+        <!-- Botão Mobile -->
+        <button id="menu-toggle" class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+
+      <!-- Navegação Mobile -->
+      <div id="mobile-menu" class="hidden md:hidden py-4 border-t border-gray-200">
+        <nav class="flex flex-col space-y-4">
+          <a href="#transparency" class="flex items-center space-x-3 text-gray-700 hover:text-blue-600 p-2 rounded-lg hover:bg-gray-50">
+            <i data-lucide="shield" class="w-5 h-5"></i><span class="font-medium">Transparência</span>
+          </a>
+          <a href="#reports" class="flex items-center space-x-3 text-gray-700 hover:text-blue-600 p-2 rounded-lg hover:bg-gray-50">
+            <i data-lucide="file-text" class="w-5 h-5"></i><span class="font-medium">Relatórios</span>
+          </a>
+          <a href="#indicators" class="flex items-center space-x-3 text-gray-700 hover:text-blue-600 p-2 rounded-lg hover:bg-gray-50">
+            <i data-lucide="bar-chart-3" class="w-5 h-5"></i><span class="font-medium">Indicadores</span>
+          </a>
+          <a href="#contact" class="flex items-center space-x-3 text-gray-700 hover:text-blue-600 p-2 rounded-lg hover:bg-gray-50">
+            <i data-lucide="users" class="w-5 h-5"></i><span class="font-medium">Contato</span>
+          </a>
+          <a href="#portal" class="mt-2 px-4 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition text-center">
+            Portal do Cidadão
+          </a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- Seção com estatísticas principais -->
+  <section class="bg-gradient-to-r from-blue-100 via-blue-50 to-blue-100 py-12 text-center">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8">
+      <div class="flex flex-col items-center">
+        <div class="bg-blue-100 p-4 rounded-2xl shadow-md">
+          <i data-lucide="eye" class="w-8 h-8 text-blue-600"></i>
+        </div>
+        <h3 class="text-2xl font-bold mt-4">100%</h3>
+        <p class="text-gray-500">Transparência Total</p>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <div class="bg-blue-100 p-4 rounded-2xl shadow-md">
+          <i data-lucide="trending-up" class="w-8 h-8 text-blue-600"></i>
+        </div>
+        <h3 class="text-2xl font-bold mt-4">Diariamente</h3>
+        <p class="text-gray-500">Dados Atualizados</p>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <div class="bg-blue-100 p-4 rounded-2xl shadow-md">
+          <i data-lucide="users" class="w-8 h-8 text-blue-600"></i>
+        </div>
+        <h3 class="text-2xl font-bold mt-4">50.000+</h3>
+        <p class="text-gray-500">Cidadãos Atendidos</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Indicadores Municipais -->
+  <section class="py-12 max-w-6xl mx-auto">
+    <h2 class="text-2xl font-bold text-center mb-2">Indicadores <span class="text-blue-600">Municipais</span></h2>
+    <p class="text-center text-gray-500 mb-8">Acompanhe os principais números da gestão municipal em tempo real</p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-white shadow-md rounded-2xl p-6 border border-gray-100 hover:shadow-lg transition">
+        <p class="text-sm text-gray-500">Orçamento Anual</p>
+        <h3 class="text-xl font-bold text-gray-800">R$ 0</h3>
+        <p class="text-xs text-gray-400">Orçamento total aprovado para 2025</p>
+      </div>
+
+      <div class="bg-green-50 shadow-md rounded-2xl p-6 border border-green-100 hover:shadow-lg transition">
+        <p class="text-sm text-gray-500">População Atendida</p>
+        <h3 class="text-xl font-bold text-gray-800">85.420</h3>
+        <p class="text-xs text-gray-400">Cidadãos residentes no município</p>
+      </div>
+
+      <div class="bg-white shadow-md rounded-2xl p-6 border border-gray-100 hover:shadow-lg transition">
+        <p class="text-sm text-gray-500">Chatbot</p>
+        <h3 class="text-xl font-bold text-gray-800">Online</h3>
+        <p class="text-xs text-gray-400">Agente especializado em atendimento público</p>
+      </div>
+
+    </div>
+  </section>
+
+<!-- Botão Chatbot -->
+<button id="chat-toggle" class="fixed bottom-6 right-6 w-14 h-14 rounded-full bg-gradient-to-r from-blue-600 to-blue-400 shadow-lg hover:scale-110 transition-transform flex items-center justify-center">
+  <i data-lucide="message-circle" class="w-6 h-6 text-white"></i>
+</button>
+
+<!-- Janela Chatbot -->
+<div id="chat-window" class="fixed bottom-20 right-6 w-[400px] h-[600px] bg-white rounded-2xl shadow-xl border border-gray-200 hidden flex flex-col">
+  <!-- Header -->
+  <div class="flex items-center justify-between p-4 border-b bg-gradient-to-r from-blue-600 to-blue-400 rounded-t-2xl">
+    <div class="flex items-center gap-3">
+      <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
+        <i data-lucide="cpu" class="w-5 h-5 text-white"></i>
+      </div>
+      <div>
+        <h3 class="font-semibold text-white">Assistente Municipal</h3>
+        <p class="text-xs text-white/80">Online agora</p>
+      </div>
+    </div>
+    <button onclick="toggleChat()" class="h-8 w-8 p-0 text-white hover:bg-white/20 rounded-full">&times;</button>
+  </div>
+
+  <!-- Messages -->
+  <div id="chat-messages" class="flex-1 p-4 overflow-y-auto space-y-3 text-sm"></div>
+
+  <!-- Input -->
+  <div class="p-3 border-t flex gap-2">
+    <input id="chat-input" type="text" placeholder="Digite sua pergunta..." class="flex-1 border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" />
+    <button id="chat-send" class="bg-blue-600 text-white px-4 rounded-lg hover:bg-blue-700 transition flex items-center justify-center">
+      <i data-lucide="send" class="w-4 h-4"></i>
+    </button>
+  </div>
+</div>
+
+    
+
+  <script>
+     lucide.createIcons();
+
+  const chatToggle = document.getElementById('chat-toggle');
+  const chatWindow = document.getElementById('chat-window');
+  const chatMessages = document.getElementById('chat-messages');
+  const chatInput = document.getElementById('chat-input');
+  const chatSend = document.getElementById('chat-send');
+
+  let threadId = null;
+
+  function toggleChat() {
+    chatWindow.classList.toggle('hidden');
+  }
+
+  chatToggle.addEventListener('click', toggleChat);
+
+  chatSend.addEventListener('click', sendMessage);
+  chatInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') sendMessage();
+  });
+
+  function sendMessage() {
+    const text = chatInput.value.trim();
+    if (!text) return;
+
+    appendMessage('user', text);
+    chatInput.value = '';
+
+    // Simula "digitando..." enquanto aguarda a resposta
+    const typingEl = appendMessage('bot', '<span class="italic text-gray-400">digitando...</span>');
+
+    fetch('http://localhost:8000/api/chat', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+          },
+      body: JSON.stringify({ messages: text, stream: false, thread_id: threadId })
+    })
+    .then(res => res.json())
+    .then(data => {
+      typingEl.innerHTML = data.message || 'Sem resposta do chatbot.';
+      if (data.thread_id) threadId = data.thread_id;
+    })
+    .catch(err => {
+      typingEl.innerHTML = 'Erro ao se comunicar com o servidor.';
+      console.error(err);
+    });
+  }
+
+  function appendMessage(sender, text) {
+    const div = document.createElement('div');
+    div.className = sender === 'user' ? 'text-right' : 'text-left';
+    const inner = document.createElement('div');
+    inner.className = `inline-block px-3 py-2 rounded-2xl text-sm ${sender === 'user' ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-800'}`;
+    inner.innerHTML = text;
+    div.appendChild(inner);
+    chatMessages.appendChild(div);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+    return inner;
+  }
+  </script>
+
+</body>
+</html>
