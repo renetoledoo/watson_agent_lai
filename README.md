@@ -20,7 +20,7 @@ Agente criado utilizando **IBM Watson Orchestrate** e consumido via **API REST e
 
 ## Imagens
 
-<img width="1336" height="858" alt="image" src="https://github.com/user-attachments/assets/5a29cdb0-0fb9-4f90-851b-f9766bfe5d92" />
+<img width="1336" height="858" alt="image" src="https://i.imgur.com/FmS1m1C.png" />
 
 
 
